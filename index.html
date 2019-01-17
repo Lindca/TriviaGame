@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link href="./assets/css/reset.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Aclonica|Cabin+Sketch|Gugi|Miniver|Rajdhani" rel="stylesheet">
+    <link href="./assets/css/style.css" rel="stylesheet">
+    <title>Trivia Game</title>
+</head>
+
+<body>
+    <div class="container1 container mx-auto jumbotron">
+        <div class="row">
+            <div class="col-sm">
+
+            </div>
+            <div class="col-sm">
+                <h1>Trivia Game</h1>
+                <p>You have 30 seconds to answer as many questions as possible!</p>
+                <p>Push the button to begin!</p>
+                <button id="beginGame">Start</button>
+            </div>
+            <div class="col-sm">
+
+            </div>
+        </div>
+    </div>
+    <div class="container2 container mx-auto jumbotron">
+        <div class="row">
+            <div class="col-sm">
+                <h1>Trivia Game</h1>
+                <p>You have 30 seconds to answer 10 questions, better get started!</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm">
+                <p>Question</p>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Q1" id="inlineRadio1" value="Q1a">
+                    <label class="form-check-label" for="inlineRadio1">A</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Q1" id="inlineRadio2" value="Q1b">
+                    <label class="form-check-label" for="inlineRadio2">B</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Q1" id="inlineRadio1" value="Q1c">
+                    <label class="form-check-label" for="inlineRadio1">C</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Q1" id="inlineRadio2" value="Q1d">
+                    <label class="form-check-label" for="inlineRadio2">D</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm">
+                <p>Question</p>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Q2" id="inlineRadio1" value="Q2a">
+                    <label class="form-check-label" for="inlineRadio1">A</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Q2" id="inlineRadio2" value="Q2b">
+                    <label class="form-check-label" for="inlineRadio2">B</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Q2" id="inlineRadio1" value="Q2c">
+                    <label class="form-check-label" for="inlineRadio1">C</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Q2" id="inlineRadio2" value="Q2d">
+                    <label class="form-check-label" for="inlineRadio2">D</label>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm">
+                <p>Question</p>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Q3" id="inlineRadio1" value="Q3a">
+                    <label class="form-check-label" for="inlineRadio1">A</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Q3" id="inlineRadio2" value="Q3b">
+                    <label class="form-check-label" for="inlineRadio2">B</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Q3" id="inlineRadio1" value="Q3c">
+                    <label class="form-check-label" for="inlineRadio1">C</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Q3" id="inlineRadio2" value="Q3d">
+                    <label class="form-check-label" for="inlineRadio2">D</label>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm">
+                <p>Question</p>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Q4" id="inlineRadio1" value="Q4a">
+                    <label class="form-check-label" for="inlineRadio1">A</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Q4" id="inlineRadio2" value="Q4b">
+                    <label class="form-check-label" for="inlineRadio2">B</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Q4" id="inlineRadio1" value="Q4c">
+                    <label class="form-check-label" for="inlineRadio1">C</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Q4" id="inlineRadio2" value="Q4d">
+                    <label class="form-check-label" for="inlineRadio2">D</label>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm">
+                <p>Question</p>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Q5" id="inlineRadio1" value="Q5a">
+                    <label class="form-check-label" for="inlineRadio1">A</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Q5" id="inlineRadio2" value="Q5b">
+                    <label class="form-check-label" for="inlineRadio2">B</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Q5" id="inlineRadio1" value="Q5c">
+                    <label class="form-check-label" for="inlineRadio1">C</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Q5" id="inlineRadio2" value="Q5d">
+                    <label class="form-check-label" for="inlineRadio2">D</label>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm">
+                <p>Question</p>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Q6" id="inlineRadio1" value="Q6a">
+                    <label class="form-check-label" for="inlineRadio1">A</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Q6" id="inlineRadio2" value="Q6b">
+                    <label class="form-check-label" for="inlineRadio2">B</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Q6" id="inlineRadio1" value="Q6c">
+                    <label class="form-check-label" for="inlineRadio1">C</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Q6" id="inlineRadio2" value="Q6d">
+                    <label class="form-check-label" for="inlineRadio2">D</label>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm">
+                <p>Question</p>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Q7" id="inlineRadio1" value="Q7a">
+                    <label class="form-check-label" for="inlineRadio1">A</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Q7" id="inlineRadio2" value="Q7b">
+                    <label class="form-check-label" for="inlineRadio2">B</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Q7" id="inlineRadio1" value="Q7c">
+                    <label class="form-check-label" for="inlineRadio1">C</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Q7" id="inlineRadio2" value="Q7d">
+                    <label class="form-check-label" for="inlineRadio2">D</label>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm">
+                <p>Question</p>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Q8" id="inlineRadio1" value="Q8a">
+                    <label class="form-check-label" for="inlineRadio1">A</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Q8" id="inlineRadio2" value="Q8b">
+                    <label class="form-check-label" for="inlineRadio2">B</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Q8" id="inlineRadio1" value="Q8c">
+                    <label class="form-check-label" for="inlineRadio1">C</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Q8" id="inlineRadio2" value="Q8d">
+                    <label class="form-check-label" for="inlineRadio2">D</label>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm">
+                <p>Question</p>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Q9" id="inlineRadio1" value="Q9a">
+                    <label class="form-check-label" for="inlineRadio1">A</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Q9" id="inlineRadio2" value="Q9b">
+                    <label class="form-check-label" for="inlineRadio2">B</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Q9" id="inlineRadio1" value="Q9c">
+                    <label class="form-check-label" for="inlineRadio1">C</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Q9" id="inlineRadio2" value="Q9d">
+                    <label class="form-check-label" for="inlineRadio2">D</label>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm">
+                <p>Question</p>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Q10" id="inlineRadio1" value="Q10a">
+                    <label class="form-check-label" for="inlineRadio1">A</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Q10" id="inlineRadio2" value="Q10b">
+                    <label class="form-check-label" for="inlineRadio2">B</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Q10" id="inlineRadio1" value="Q10c">
+                    <label class="form-check-label" for="inlineRadio1">C</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Q10" id="inlineRadio2" value="Q10d">
+                    <label class="form-check-label" for="inlineRadio2">D</label>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="container3 container mx-auto jumbotron">
+        <div class="row">
+            <div class="col-sm">
+                <h1>Trivia Results!</h1>
+                <p>How did you do?</p>
+            </div>
+        </div>
+        <div class="container mx-auto"></div>
+        <div class="row">
+            <div class="col-sm">
+                <p>Correct Answers: <span id="correctAnswers"></span></p>
+            </div>
+            <div class="col-sm">
+                <p>Incorrect Answers: <span id="incorrectAnswers"></span></p>
+            </div>
+            <div class="col-sm">
+                <p>Unanswered Questions: <span id="unansweredQuestions"></span></p>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script>
+        //******can I hide Html until button is clicked then show it when the timer starts?
+        $(window).on("load", displayBegin);
+        $("#beginGame").on("click", displayGame);
+        // if time is up then show Results and hideBegin, hideGame
+        setTimeout(displayResults, 30000);
+        function displayBegin() {
+            $(".container1").show();
+            $(".container2").hide();
+            $(".container3").hide();
+        }
+        function displayGame() {
+            $(".container1").hide();
+            $(".container2").show();
+            $(".container3").hide();
+        }
+        function displayResults() {
+            $(".container1").hide();
+            $(".container2").hide();
+            $(".container3").show();
+        }
+
+        // if(answers is q1b)
+
+        // $('[type="radio"]').on("click", function () {
+        //     var value = $(this).val();
+        //     if (this.val() =)
+        // })
+        // if ()
+
+
+
+        // when button is clicked start timer
+            // display html questions with forms
+        // when 30 seconds is up 
+            //stop displaying html questions with forms
+        // when timer is stopped 
+
+            // display how many answers were right 
+            // and how many were wrong 
+            // and how many were unanswered
+
+
+
+
+    </script>
+
+</body>
+
+</html>

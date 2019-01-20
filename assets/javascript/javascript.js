@@ -18,7 +18,6 @@ function displayGame() {
         $('#timeDisplay').text('00:00')
         time--;
         var converted = timeConverter(time);
-        console.log(converted);
         $("#timeDisplay").text(converted);
         function timeConverter(t) {
 
@@ -44,9 +43,9 @@ function displayResults() {
     $(".container1").hide();
     $(".container2").hide();
     $(".container3").show();
-
     $("#correctAnswers").text(correctArray.length);
     $("#incorrectAnswers").text(incorrectArray.length);
+    console.log("this should be the Array",incorrectArray);
     if (correctArray.length + incorrectArray.length !== 15) {
         unansweredQuestions = 15 - (incorrectArray.length + correctArray.length);
         $("#unansweredQuestions").html(unansweredQuestions)
@@ -157,7 +156,7 @@ $("#Q10").on("click", function (event) {
     }
 })
 $("#Q11").on("click", function (event) {
-    if (event.target.value == "Q11d") {
+    if (event.target.value == "Q11c") {
         correctArray.push(event.target.value);
         $("#Q11").hide();
     }
@@ -187,7 +186,7 @@ $("#Q13").on("click", function (event) {
     }
 })
 $("#Q14").on("click", function (event) {
-    if (event.target.value == "Q14a") {
+    if (event.target.value == "Q14d") {
         correctArray.push(event.target.value);
         $("#Q14").hide();
     }

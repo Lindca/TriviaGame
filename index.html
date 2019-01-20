@@ -9,7 +9,7 @@
     <link href="./assets/css/reset.css" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
         crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Aclonica|Cabin+Sketch|Gugi|Miniver|Rajdhani" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch|Gugi|Miniver|Neucha|Rajdhani" rel="stylesheet">
     <link href="./assets/css/style.css" rel="stylesheet">
     <title>Trivia Game</title>
 </head>
@@ -22,7 +22,7 @@
             </div>
             <div class="col-sm">
                 <h1>Trivia Game</h1>
-                <p>You have 30 seconds to answer as many questions as possible!</p>
+                <p>You have 2 minutes to answer as many questions as possible!</p>
                 <p>Push the button to begin!</p>
                 <button id="beginGame">Start</button>
             </div>
@@ -33,222 +33,345 @@
     </div>
     <div class="container2 container mx-auto jumbotron">
         <div class="row">
-            <div class="col-sm">
+            <div id="timeDisplay" class="col-sm">
                 <h1>Trivia Game</h1>
-                <p>You have 30 seconds to answer 10 questions, better get started!</p>
+                <p>You have 2 minutes to answer 15 questions, better get started!</p>
             </div>
         </div>
         <div id="Q1" class="row">
             <div class="col-sm">
-                <p>Question</p>
+                <h2>Which of the following movies was Tom Hanks NOT an actor in?</h2>
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" id="Q1" value="Q1a" name="Q1">
-                    <label class="form-check-label" for="inlineRadio1">A</label>
+                    <input class="form-check-input" type="radio" value="Q1a" name="Q1">
+                    <label class="form-check-label" for="inlineRadio1">A: Cast Away</label>
                 </div>
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" id="Q1" value="Q1b" name="Q1">
-                    <label class="form-check-label" for="inlineRadio2">B</label>
+                    <input class="form-check-input" type="radio" value="Q1b" name="Q1">
+                    <label class="form-check-label" for="inlineRadio2">B: Good Will Hunting</label>
                 </div>
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" id="Q1" value="Q1c" name="Q1">
-                    <label class="form-check-label" for="inlineRadio3">C</label>
+                    <input class="form-check-input" type="radio" value="Q1c" name="Q1">
+                    <label class="form-check-label" for="inlineRadio3">C: Big</label>
                 </div>
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" id="Q1" value="Q1d" name="Q1">
-                    <label class="form-check-label" for="inlineRadio4">D</label>
+                    <input class="form-check-input" type="radio" value="Q1d" name="Q1">
+                    <label class="form-check-label" for="inlineRadio4">D: Splash</label>
                 </div>
             </div>
         </div>
+        <br>
 
         <div id="Q2" class="row">
             <div class="col-sm">
-                <p>Question</p>
+                <h2>Which of the following movies starred both Brad Pitt and Orlando Bloom? </h2>
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" id="Q2" value="Q2a">
-                    <label class="form-check-label" for="inlineRadio1">A</label>
+                    <input class="form-check-input" type="radio" name="Q2" value="Q2a">
+                    <label class="form-check-label" for="inlineRadio1">A: The Curious Case of Benjamin Button</label>
                 </div>
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" id="Q2" value="Q2b">
-                    <label class="form-check-label" for="inlineRadio2">B</label>
+                    <input class="form-check-input" type="radio" name="Q2" value="Q2b">
+                    <label class="form-check-label" for="inlineRadio2">B: The Time Travellers Wife</label>
                 </div>
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" id="Q2" value="Q2c">
-                    <label class="form-check-label" for="inlineRadio3">C</label>
+                    <input class="form-check-input" type="radio" name="Q2" value="Q2c">
+                    <label class="form-check-label" for="inlineRadio3">C: Troy</label>
                 </div>
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" id="Q2" value="Q2d">
-                    <label class="form-check-label" for="inlineRadio4">D</label>
+                    <input class="form-check-input" type="radio" name="Q2" value="Q2d">
+                    <label class="form-check-label" for="inlineRadio4">D: World War Z</label>
                 </div>
             </div>
         </div>
+        <br>
         <div id="Q3" class="row">
             <div class="col-sm">
-                <p>Question</p>
+                <h2>Which of the following movies does actress Natalie Portman star in?</h2>
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" id="Q3" value="Q3a">
-                    <label class="form-check-label" for="inlineRadio1">A</label>
+                    <input class="form-check-input" type="radio" name="Q3" value="Q3a">
+                    <label class="form-check-label" for="inlineRadio1">A: The Invasion</label>
                 </div>
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" id="Q3" value="Q3b">
-                    <label class="form-check-label" for="inlineRadio2">B</label>
+                    <input class="form-check-input" type="radio" name="Q3" value="Q3b">
+                    <label class="form-check-label" for="inlineRadio2">B: Paul</label>
                 </div>
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" id="Q3" value="Q3c">
-                    <label class="form-check-label" for="inlineRadio3">C</label>
+                    <input class="form-check-input" type="radio" name="Q3" value="Q3c">
+                    <label class="form-check-label" for="inlineRadio3">C: Hitchhikers Guide to the Galaxy</label>
                 </div>
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" id="Q3" value="Q3d">
-                    <label class="form-check-label" for="inlineRadio4">D</label>
+                    <input class="form-check-input" type="radio" name="Q3" value="Q3d">
+                    <label class="form-check-label" for="inlineRadio4">D: Annihilation</label>
                 </div>
             </div>
         </div>
+        <br>
         <div id="Q4" class="row">
             <div class="col-sm">
-                <p>Question</p>
+                <h2>How many movies are in the Fast and Furious Franchise?</h2>
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" id="Q4" value="Q4a">
-                    <label class="form-check-label" for="inlineRadio1">A</label>
+                    <input class="form-check-input" type="radio" name="Q4" value="Q4a">
+                    <label class="form-check-label" for="inlineRadio1">A: 9</label>
                 </div>
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" id="Q4" value="Q4b">
-                    <label class="form-check-label" for="inlineRadio2">B</label>
+                    <input class="form-check-input" type="radio" name="Q4" value="Q4b">
+                    <label class="form-check-label" for="inlineRadio2">B: 6</label>
                 </div>
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" id="Q4" value="Q4c">
-                    <label class="form-check-label" for="inlineRadio3">C</label>
+                    <input class="form-check-input" type="radio" name="Q4" value="Q4c">
+                    <label class="form-check-label" for="inlineRadio3">C: 10</label>
                 </div>
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" id="Q4" value="Q4d">
-                    <label class="form-check-label" for="inlineRadio4">D</label>
+                    <input class="form-check-input" type="radio" name="Q4" value="Q4d">
+                    <label class="form-check-label" for="inlineRadio4">D: 11</label>
                 </div>
             </div>
         </div>
+        <br>
         <div id="Q5" class="row">
             <div class="col-sm">
-                <p>Question</p>
+                <h2>Which of the following character names are not in the movie Forest Gump?</h2>
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" id="Q5" value="Q5a">
-                    <label class="form-check-label" for="inlineRadio1">A</label>
+                    <input class="form-check-input" type="radio" name="Q5" value="Q5a">
+                    <label class="form-check-label" for="inlineRadio1">A: Bubba</label>
                 </div>
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" id="Q5" value="Q5b">
-                    <label class="form-check-label" for="inlineRadio2">B</label>
+                    <input class="form-check-input" type="radio" name="Q5" value="Q5b">
+                    <label class="form-check-label" for="inlineRadio2">B: Wilson</label>
                 </div>
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" id="Q5" value="Q5c">
-                    <label class="form-check-label" for="inlineRadio3">C</label>
+                    <input class="form-check-input" type="radio" name="Q5" value="Q5c">
+                    <label class="form-check-label" for="inlineRadio3">C: Jenny Curran</label>
                 </div>
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" id="Q5" value="Q5d">
-                    <label class="form-check-label" for="inlineRadio4">D</label>
+                    <input class="form-check-input" type="radio" name="Q5" value="Q5d">
+                    <label class="form-check-label" for="inlineRadio4">D: Elvis Presley</label>
                 </div>
             </div>
         </div>
+        <br>
         <div id="Q6" class="row">
             <div class="col-sm">
-                <p>Question</p>
+                <h2>In the movie "Pretty Woman" what was the name of Vivians roommate?</h2>
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" id="Q6" value="Q6a">
-                    <label class="form-check-label" for="inlineRadio1">A</label>
+                    <input class="form-check-input" type="radio" name="Q6" value="Q6a">
+                    <label class="form-check-label" for="inlineRadio1">A: Rachel</label>
                 </div>
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" id="Q6" value="Q6b">
-                    <label class="form-check-label" for="inlineRadio2">B</label>
+                    <input class="form-check-input" type="radio" name="Q6" value="Q6b">
+                    <label class="form-check-label" for="inlineRadio2">B: Trish</label>
                 </div>
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" id="Q6" value="Q6c">
-                    <label class="form-check-label" for="inlineRadio3">C</label>
+                    <input class="form-check-input" type="radio" name="Q6" value="Q6c">
+                    <label class="form-check-label" for="inlineRadio3">C: Kit</label>
                 </div>
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" id="Q6" value="Q6d">
-                    <label class="form-check-label" for="inlineRadio4">D</label>
+                    <input class="form-check-input" type="radio" name="Q6" value="Q6d">
+                    <label class="form-check-label" for="inlineRadio4">D: Lisa</label>
                 </div>
             </div>
         </div>
+        <br>
         <div id="Q7" class="row">
             <div class="col-sm">
-                <p>Question</p>
+                <h2>Which of the following movies is famous for the line "I see dead people"?</h2>
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" id="Q7" value="Q7a">
-                    <label class="form-check-label" for="inlineRadio1">A</label>
+                    <input class="form-check-input" type="radio" name="Q7" value="Q7a">
+                    <label class="form-check-label" for="inlineRadio1">A: Amityville Horro</label>
                 </div>
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" id="Q7" value="Q7b">
-                    <label class="form-check-label" for="inlineRadio2">B</label>
+                    <input class="form-check-input" type="radio" name="Q7" value="Q7b">
+                    <label class="form-check-label" for="inlineRadio2">B: It</label>
                 </div>
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" id="Q7" value="Q7c">
-                    <label class="form-check-label" for="inlineRadio3">C</label>
+                    <input class="form-check-input" type="radio" name="Q7" value="Q7c">
+                    <label class="form-check-label" for="inlineRadio3">C: Poltergeist</label>
                 </div>
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" id="Q7" value="Q7d">
-                    <label class="form-check-label" for="inlineRadio4">D</label>
+                    <input class="form-check-input" type="radio" name="Q7" value="Q7d">
+                    <label class="form-check-label" for="inlineRadio4">D: The Sixth Sense</label>
                 </div>
             </div>
         </div>
+        <br>
         <div id="Q8" class="row">
             <div class="col-sm">
-                <p>Question</p>
+                <h2>What year was "The Lion King" released?</h2>
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" id="Q8" value="Q8a">
-                    <label class="form-check-label" for="inlineRadio1">A</label>
+                    <input class="form-check-input" type="radio" name="Q8" value="Q8a">
+                    <label class="form-check-label" for="inlineRadio1">A: 1992</label>
                 </div>
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" id="Q8" value="Q8b">
-                    <label class="form-check-label" for="inlineRadio2">B</label>
+                    <input class="form-check-input" type="radio" name="Q8" value="Q8b">
+                    <label class="form-check-label" for="inlineRadio2">B: 1994</label>
                 </div>
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" id="Q8" value="Q8c">
-                    <label class="form-check-label" for="inlineRadio3">C</label>
+                    <input class="form-check-input" type="radio" name="Q8" value="Q8c">
+                    <label class="form-check-label" for="inlineRadio3">C: 1999</label>
                 </div>
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" id="Q8" value="Q8d">
-                    <label class="form-check-label" for="inlineRadio4">D</label>
+                    <input class="form-check-input" type="radio" name="Q8" value="Q8d">
+                    <label class="form-check-label" for="inlineRadio4">D: 1993</label>
                 </div>
             </div>
         </div>
+        <br>
         <div id="Q9" class="row">
             <div class="col-sm">
-                <p>Question</p>
+                <h2>Which 80s movie was the highest grossing film of the decade?</h2>
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" id="Q9" value="Q9a">
-                    <label class="form-check-label" for="inlineRadio1">A</label>
+                    <input class="form-check-input" type="radio" name="Q9" value="Q9a">
+                    <label class="form-check-label" for="inlineRadio1">A: E.T. The Extraterrestrial</label>
                 </div>
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" id="Q9" value="Q9b">
-                    <label class="form-check-label" for="inlineRadio2">B</label>
+                    <input class="form-check-input" type="radio" name="Q9" value="Q9b">
+                    <label class="form-check-label" for="inlineRadio2">B: Back to the Future</label>
                 </div>
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" id="Q9" value="Q9c">
-                    <label class="form-check-label" for="inlineRadio3">C</label>
+                    <input class="form-check-input" type="radio" name="Q9" value="Q9c">
+                    <label class="form-check-label" for="inlineRadio3">C: Star Wars The Empire Strikes Back</label>
                 </div>
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" id="Q9" value="Q9d">
-                    <label class="form-check-label" for="inlineRadio4">D</label>
+                    <input class="form-check-input" type="radio" name="Q9" value="Q9d">
+                    <label class="form-check-label" for="inlineRadio4">D: The Breakfast Club</label>
                 </div>
             </div>
         </div>
+        <br>
         <div id="Q10" class="row">
             <div class="col-sm">
-                <p>Question</p>
+                <h2>Which of the following movies is known for the quote “Hello, my name is Inigo Montoya. You killed
+                    my father. Prepare to die!”</h2>
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" id="Q10" value="Q10a">
-                    <label class="form-check-label" for="inlineRadio1">A</label>
+                    <input class="form-check-input" type="radio" name="Q10" value="Q10a">
+                    <label class="form-check-label" for="inlineRadio1">A: The Princess Bride</label>
                 </div>
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" id="Q10" value="Q10b">
-                    <label class="form-check-label" for="inlineRadio2">B</label>
+                    <input class="form-check-input" type="radio" name="Q10" value="Q10b">
+                    <label class="form-check-label" for="inlineRadio2">B: The Legend of Zorro</label>
                 </div>
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" id="Q10" value="Q10c">
-                    <label class="form-check-label" for="inlineRadio3">C</label>
+                    <input class="form-check-input" type="radio" name="Q10" value="Q10c">
+                    <label class="form-check-label" for="inlineRadio3">C: Pans Labyrinth</label>
                 </div>
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" id="Q10" value="Q10d">
-                    <label class="form-check-label" for="inlineRadio4">D</label>
+                    <input class="form-check-input" type="radio" name="Q10" value="Q10d">
+                    <label class="form-check-label" for="inlineRadio4">D: Pirates of the Caribbean</label>
                 </div>
             </div>
         </div>
+        <br>
+        <div id="Q11" class="row">
+            <div class="col-sm">
+                <h2>In the classic movie "The Breakfast Club" what was Claire in dentention for?</h2>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Q11" value="Q11a">
+                    <label class="form-check-label" for="inlineRadio1">A: Pulling a fire alarm</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Q11" value="Q11b">
+                    <label class="form-check-label" for="inlineRadio2">B: Bringing a flare gun to school</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Q11" value="Q11c">
+                    <label class="form-check-label" for="inlineRadio3">C: Skipping school</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Q11" value="Q11d">
+                    <label class="form-check-label" for="inlineRadio4">D: No reason at all</label>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div id="Q12" class="row">
+            <div class="col-sm">
+                <h2>What was the unconventional weapon that was used to kill a police man in the movie "No Country for
+                    Old Men"?</h2>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Q12" value="Q12a">
+                    <label class="form-check-label" for="inlineRadio1">A: A Heat Gun</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Q12" value="Q12b">
+                    <label class="form-check-label" for="inlineRadio2">B: A Tree</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Q12" value="Q12c">
+                    <label class="form-check-label" for="inlineRadio3">C: A Cattle Gun</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Q12" value="Q12d">
+                    <label class="form-check-label" for="inlineRadio4">D: Scissors</label>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div id="Q13" class="row">
+            <div class="col-sm">
+                <h2>What were the names of the dogs in the movie "Homeward Bound"?</h2>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Q13" value="Q13a">
+                    <label class="form-check-label" for="inlineRadio1">A: Rocky and Shadow</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Q13" value="Q13b">
+                    <label class="form-check-label" for="inlineRadio2">B: Chance and Shadow</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Q13" value="Q13c">
+                    <label class="form-check-label" for="inlineRadio3">C: Olly and Chance</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Q13" value="Q13d">
+                    <label class="form-check-label" for="inlineRadio4">D: Pat and Rocky</label>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div id="Q14" class="row">
+            <div class="col-sm">
+                <h2>In what order did the following actors play the character of Batman? (First-->Last)</h2>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Q14" value="Q14a">
+                    <label class="form-check-label" for="inlineRadio1">A: George Clooney Val Kilmer Christian Bale Ben Affleck</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Q14" value="Q14b">
+                    <label class="form-check-label" for="inlineRadio2">B: Val Kilmer Ben Affleck George Clooney Christian Bale</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Q14" value="Q14c">
+                    <label class="form-check-label" for="inlineRadio3">C: George Clooney Christian Bale Val Kilmer Ben Affleck</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Q14" value="Q14d">
+                    <label class="form-check-label" for="inlineRadio4">D: Val Kilmer George Clooney Christian Bale Ben Affleck</label>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div id="Q15" class="row">
+            <div class="col-sm">
+                <h2>In the movie "Shawshank Redemption" what was Andy Dufresne's day job before he was imprisoned?</h2>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Q15" value="Q15a">
+                    <label class="form-check-label" for="inlineRadio1">A: Banker</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Q15" value="Q15b">
+                    <label class="form-check-label" for="inlineRadio2">B: Accountant</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Q15" value="Q15c">
+                    <label class="form-check-label" for="inlineRadio3">C: Teacher</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Q15" value="Q15d">
+                    <label class="form-check-label" for="inlineRadio4">D: Janitor</label>
+                </div>
+            </div>
+        </div>
+        <br>
+
     </div>
     </div>
     <div class="container3 container mx-auto jumbotron">
@@ -261,79 +384,18 @@
         <div class="container mx-auto"></div>
         <div class="row">
             <div class="col-sm">
-                <p>Correct Answers: <span id="correctAnswers"></span></p>
+                <h2>Correct Answers: <span id="correctAnswers"></span></h2>
             </div>
             <div class="col-sm">
-                <p>Incorrect Answers: <span id="incorrectAnswers"></span></p>
+                <h2>Incorrect Answers: <span id="incorrectAnswers"></span></h2>
             </div>
             <div class="col-sm">
-                <p>Unanswered Questions: <span id="unansweredQuestions"></span></p>
+                <h2>Unanswered Questions: <span id="unansweredQuestions"></span></h2>
             </div>
         </div>
     </div>
     </div>
-    <script>
-        //******can I hide Html until button is clicked then show it when the timer starts?
-        $(window).on("load", displayBegin);
-        $("#beginGame").on("click", displayGame);
-        // if time is up then show Results and hideBegin, hideGame
-        setTimeout(displayResults, 30000);
-        function displayBegin() {
-            $(".container1").show();
-            $(".container2").hide();
-            $(".container3").hide();
-        }
-        function displayGame() {
-            $(".container1").hide();
-            $(".container2").show();
-            $(".container3").hide();
-        }
-        function displayResults() {
-            $(".container1").hide();
-            $(".container2").hide();
-            $(".container3").show();
-        }
-
-        answersCorrect=[];
-        incorrectArray=[];
-        $("#Q1").on("click", function(event){
-            console.log('what the heck is this', this)
-            if (event.target.value == "Q1b" ){ 
-                console.log(this)
-                answersCorrect.push(event.target.value);
-                $("#Q1").hide();
-                console.log(answersCorrect)
-            }
-            else{
-                incorrectArray.push(event.target.value);
-                $("#Q1").hide();
-            }
-            console.log(answersCorrect)
-        })
-        
-
-        // $('[type="radio"]').on("click", function () {
-        //     var value = $(this).val();
-        //     if (this.val() =)
-        // })
-        // if ()
-
-
-
-        // when button is clicked start timer
-            // display html questions with forms
-        // when 30 seconds is up 
-            //stop displaying html questions with forms
-        // when timer is stopped 
-
-            // display how many answers were right 
-            // and how many were wrong 
-            // and how many were unanswered
-
-
-
-
-    </script>
+    <script src="./assets/javascript/javascript.js"></script>
 
 </body>
 

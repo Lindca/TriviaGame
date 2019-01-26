@@ -37,7 +37,7 @@ function displayGame() {
 
             return minutes + ":" + seconds;
         }
-        if (correctArray.length + incorrectArray.length == 15) {
+        if (correctArray.length + incorrectArray.length === 15) {
             displayResults();
         }
     }
@@ -48,19 +48,20 @@ function displayResults() {
     $(".container3").show();
     $("#correctAnswers").text(correctArray.length);
     $("#incorrectAnswers").text(incorrectArray.length);
-    console.log("this should be the Array", incorrectArray);
     if (correctArray.length + incorrectArray.length !== 15) {
         unansweredQuestions = 15 - (incorrectArray.length + correctArray.length);
         $("#unansweredQuestions").html(unansweredQuestions);
         displayResults();
     }
-    
+
 }
 
 var correctArray = [];
 var incorrectArray = [];
 var unansweredQuestions = [];
-$("#Q1").on("click", function (event) {
+// var check = $("name").val();
+
+$(".Q1").on("click", function (event) {
     if (event.target.value == "Q1b") {
         correctArray.push(event.target.value);
         $("#Q1").remove();
@@ -70,7 +71,7 @@ $("#Q1").on("click", function (event) {
         $("#Q1").remove();
     }
 })
-$("#Q2").on("click", function (event) {
+$(".Q2").on("click", function (event) {
     if (event.target.value == "Q2c") {
         correctArray.push(event.target.value);
         $("#Q2").remove();
@@ -80,7 +81,7 @@ $("#Q2").on("click", function (event) {
         $("#Q2").remove();
     }
 })
-$("#Q3").on("click", function (event) {
+$(".Q3").on("click", function (event) {
     if (event.target.value == "Q3d") {
         correctArray.push(event.target.value);
         $("#Q3").remove();
@@ -90,7 +91,7 @@ $("#Q3").on("click", function (event) {
         $("#Q3").remove();
     }
 })
-$("#Q4").on("click", function (event) {
+$(".Q4").on("click", function (event) {
     if (event.target.value == "Q4c") {
         correctArray.push(event.target.value);
         $("#Q4").remove();
@@ -100,7 +101,7 @@ $("#Q4").on("click", function (event) {
         $("#Q4").remove();
     }
 })
-$("#Q5").on("click", function (event) {
+$(".Q5").on("click", function (event) {
     if (event.target.value == "Q5b") {
         correctArray.push(event.target.value);
         $("#Q5").remove();
@@ -110,7 +111,7 @@ $("#Q5").on("click", function (event) {
         $("#Q5").remove();
     }
 })
-$("#Q6").on("click", function (event) {
+$(".Q6").on("click", function (event) {
     if (event.target.value == "Q6c") {
         correctArray.push(event.target.value);
         $("#Q6").remove();
@@ -120,7 +121,7 @@ $("#Q6").on("click", function (event) {
         $("#Q6").remove();
     }
 })
-$("#Q7").on("click", function (event) {
+$(".Q7").on("click", function (event) {
     if (event.target.value == "Q7d") {
         correctArray.push(event.target.value);
         $("#Q7").remove();
@@ -130,7 +131,7 @@ $("#Q7").on("click", function (event) {
         $("#Q7").remove();
     }
 })
-$("#Q8").on("click", function (event) {
+$(".Q8").on("click", function (event) {
     if (event.target.value == "Q8b") {
         correctArray.push(event.target.value);
         $("#Q8").remove();
@@ -140,7 +141,7 @@ $("#Q8").on("click", function (event) {
         $("#Q8").remove();
     }
 })
-$("#Q9").on("click", function (event) {
+$(".Q9").on("click", function (event) {
     if (event.target.value == "Q9a") {
         correctArray.push(event.target.value);
         $("#Q9").remove();
@@ -150,7 +151,7 @@ $("#Q9").on("click", function (event) {
         $("#Q9").remove();
     }
 })
-$("#Q10").on("click", function (event) {
+$(".Q10").on("click", function (event) {
     if (event.target.value == "Q10a") {
         correctArray.push(event.target.value);
         $("#Q10").remove();
@@ -160,7 +161,7 @@ $("#Q10").on("click", function (event) {
         $("#Q10").remove();
     }
 })
-$("#Q11").on("click", function (event) {
+$(".Q11").on("click", function (event) {
     if (event.target.value == "Q11c") {
         correctArray.push(event.target.value);
         $("#Q11").remove();
@@ -170,7 +171,7 @@ $("#Q11").on("click", function (event) {
         $("#Q11").remove();
     }
 })
-$("#Q12").on("click", function (event) {
+$(".Q12").on("click", function (event) {
     if (event.target.value == "Q12c") {
         correctArray.push(event.target.value);
         $("#Q12").remove();
@@ -180,7 +181,7 @@ $("#Q12").on("click", function (event) {
         $("#Q12").remove();
     }
 })
-$("#Q13").on("click", function (event) {
+$(".Q13").on("click", function (event) {
     if (event.target.value == "Q13b") {
         correctArray.push(event.target.value);
         $("#Q13").remove();
@@ -190,7 +191,7 @@ $("#Q13").on("click", function (event) {
         $("#Q13").remove();
     }
 })
-$("#Q14").on("click", function (event) {
+$(".Q14").on("click", function (event) {
     if (event.target.value == "Q14d") {
         correctArray.push(event.target.value);
         $("#Q14").remove();
@@ -200,7 +201,7 @@ $("#Q14").on("click", function (event) {
         $("#Q14").remove();
     }
 })
-$("#Q15").on("click", function (event) {
+$(".Q15").on("click", function (event) {
     if (event.target.value == "Q15a") {
         correctArray.push(event.target.value);
         $("#Q15").remove();
@@ -210,3 +211,5 @@ $("#Q15").on("click", function (event) {
         $("#Q15").remove();
     }
 })
+
+//"input[type='radio]"

@@ -19,3 +19,7 @@ h2{font-size: 50px;
     font-size: 60px;
 
 }
+.form-check-input{
+    font-size: 70px;
+    transform: scale(2);
+}

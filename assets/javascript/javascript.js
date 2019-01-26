@@ -37,6 +37,9 @@ function displayGame() {
 
             return minutes + ":" + seconds;
         }
+        if (correctArray.length + incorrectArray.length == 15) {
+            displayResults();
+        }
     }
 }
 function displayResults() {
@@ -45,11 +48,13 @@ function displayResults() {
     $(".container3").show();
     $("#correctAnswers").text(correctArray.length);
     $("#incorrectAnswers").text(incorrectArray.length);
-    console.log("this should be the Array",incorrectArray);
+    console.log("this should be the Array", incorrectArray);
     if (correctArray.length + incorrectArray.length !== 15) {
         unansweredQuestions = 15 - (incorrectArray.length + correctArray.length);
-        $("#unansweredQuestions").html(unansweredQuestions)
+        $("#unansweredQuestions").html(unansweredQuestions);
+        displayResults();
     }
+    
 }
 
 var correctArray = [];

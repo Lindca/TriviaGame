@@ -15,3 +15,7 @@ h1{font-family: 'Neucha', cursive;
 h2{font-size: 50px;
     font-family: 'Neucha', cursive;
 }
+#timeDisplay{
+    font-size: 60px;
+
+}
